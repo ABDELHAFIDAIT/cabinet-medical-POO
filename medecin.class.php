@@ -1,5 +1,5 @@
 <?php
-include "./utilisateur.class.php" ;
+// include_once "./utilisateur.class.php" ;
 class medecin extends Utilisateur {
     private $specialite ;
 
@@ -12,8 +12,8 @@ class medecin extends Utilisateur {
         $this->specialite= $new_specialte;
     }
     //method
-    public function consulterPatient($prenom_p,$nom_p){
-        echo"le medecin $this->prenom $this->nom de $this->specialite va consulter le patient $prenom_p $nom_p .";
+    public function consulterPatient($full_name){
+        echo"le medecin $this->prenom $this->nom de $this->specialite va consulter le patient $full_name .";
 
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-    include "./utilisateur.class.php";
+    // include_once "./utilisateur.class.php";
 
     class Patient extends Utilisateur{
         private $rendez_vous ;
@@ -15,8 +15,8 @@
             $this->rendez_vous = $new_rdv;
         }
 
-        public function prendreRendezVous($prenom_m,$nom_m){
-            echo "Le patient $this->prenom $this->nom a un rendez-vous chez le Medecin $prenom_m $nom_m à la date $this->rendez_vous !";
+        public function prendreRendezVous($full_name){
+            echo "Le patient $this->prenom $this->nom a un rendez-vous chez le Medecin $full_name à la date $this->rendez_vous !";
         }
 
     }
