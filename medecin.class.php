@@ -17,6 +17,3 @@ class medecin extends Utilisateur {
 
     }
 }
-
-
-?>
